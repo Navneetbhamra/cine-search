@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Search from './components/Search.jsx';
 import Spinner from './components/Spinner.jsx';
-import MovieCard from './components/movieCard.jsx';
+import MovieCard from './components/MovieCard.jsx';
 import { useDebounce } from 'react-use';
 import { getTrendingMovies, updateSearchCount } from './appwrite.js';
 
@@ -105,7 +105,7 @@ export const App = () => {
             <div className="wrapper">
                 <header>
                     <img src="./hero-img.png" alt="Hero Banner" />
-                    <h1>Find <span className="text-gradient"> Movies </span> You'll enjoy Without The Hassle</h1>
+                    <h1>Find <span className="text-gradient"> Movies </span>In Cine Search</h1>
                     <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
                 </header>
 
